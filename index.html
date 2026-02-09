@@ -7,7 +7,6 @@
     <link rel="stylesheet" href="styles.css">
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
     <link rel="icon" type="image/png" href="icon.jpeg">
 </head>
 <body>
@@ -24,6 +23,9 @@
             <ul class="nav-links" id="navLinks">
                 <li><a href="#home" onclick="closeMenu()">Home</a></li>
                 <li><a href="#products" onclick="closeMenu()">Collection</a></li>
+                <li><a href="#favorites" onclick="closeMenu()">Favorites</a></li>
+                <li><a href="#orders" onclick="closeMenu()">My Orders</a></li>
+                <li><a href="#reviews" onclick="closeMenu()">Reviews</a></li>
                 <li><a href="#about" onclick="closeMenu()">About</a></li>
                 <li><a href="#contact" onclick="closeMenu()">Contact</a></li>
             </ul>
@@ -41,18 +43,57 @@
         </div>
     </nav>
 
-    <!-- Hero Section - EXACTLY LIKE OLD WEBSITE -->
+    <!-- Hero Section -->
     <section id="home" class="hero">
         <div class="hero-container">
             <div class="hero-content">
-                <h2 class="hero-subtitle">Premium Fashion</h2>
-                <h1 class="hero-title">Elegant<br><span>Salwar Kameez</span></h1>
-                <p class="hero-text">Discover our exclusive collection of luxury clothing designed for the modern elite.</p>
-                <a href="#products" class="cta-button">Explore Collection</a>
+                <div class="hero-badge"><i class="fas fa-sparkles"></i> Premium Collection 2026</div>
+                <h2 class="hero-subtitle">Luxury Fashion Redefined</h2>
+                <h1 class="hero-title">Elegant<br><span class="gold-text">Salwar Kameez</span></h1>
+                <p class="hero-text">Discover our exclusive collection of luxury clothing designed for the modern elite. Premium quality at affordable prices.</p>
+                <div class="hero-buttons">
+                    <a href="#products" class="cta-button">Explore Collection</a>
+                    <a href="https://wa.me/923152480364" target="_blank" class="cta-button-outline">
+                        <i class="fab fa-whatsapp"></i> Chat Now
+                    </a>
+                </div>
+                <div class="hero-stats">
+                    <div class="stat-item">
+                        <span class="stat-number">500+</span>
+                        <span class="stat-label">Happy Customers</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-number">4.9</span>
+                        <span class="stat-label">Rating</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-number">100%</span>
+                        <span class="stat-label">Quality</span>
+                    </div>
+                </div>
             </div>
             <div class="hero-image">
                 <div class="gold-circle"></div>
-                <img src="WhatsApp Image 2026-02-06 at 1.38.12 PM.jpeg" alt="AH Luxe Official">
+                <div class="gold-circle-2"></div>
+                <div class="hero-image-wrapper">
+                    <img src="WhatsApp Image 2026-02-06 at 1.38.12 PM.jpeg" alt="AH Luxe Official">
+                    <div class="hero-image-overlay">
+                        <div class="overlay-content">
+                            <i class="fas fa-crown"></i>
+                            <span>Premium Quality</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="floating-badge">
+                    <i class="fas fa-star"></i>
+                    <span>Best Seller</span>
+                </div>
+            </div>
+        </div>
+        <div class="hero-scroll">
+            <div class="scroll-indicator">
+                <span>Scroll Down</span>
+                <i class="fas fa-chevron-down"></i>
             </div>
         </div>
     </section>
@@ -60,29 +101,37 @@
     <!-- Features Bar -->
     <section class="features-bar">
         <div class="feature-item">
-            <i class="fas fa-shipping-fast"></i>
-            <div>
+            <div class="feature-icon">
+                <i class="fas fa-shipping-fast"></i>
+            </div>
+            <div class="feature-content">
                 <h4>Free Shipping</h4>
-                <p>On all orders</p>
+                <p>All over Pakistan</p>
             </div>
         </div>
         <div class="feature-item">
-            <i class="fas fa-medal"></i>
-            <div>
+            <div class="feature-icon">
+                <i class="fas fa-medal"></i>
+            </div>
+            <div class="feature-content">
                 <h4>Premium Quality</h4>
-                <p>Handcrafted</p>
+                <p>Handcrafted fabric</p>
             </div>
         </div>
         <div class="feature-item">
-            <i class="fas fa-undo"></i>
-            <div>
+            <div class="feature-icon">
+                <i class="fas fa-undo"></i>
+            </div>
+            <div class="feature-content">
                 <h4>Easy Returns</h4>
                 <p>7 days policy</p>
             </div>
         </div>
         <div class="feature-item">
-            <i class="fas fa-headset"></i>
-            <div>
+            <div class="feature-icon">
+                <i class="fas fa-headset"></i>
+            </div>
+            <div class="feature-content">
                 <h4>24/7 Support</h4>
                 <p>Always here</p>
             </div>
@@ -92,8 +141,9 @@
     <!-- Products Section -->
     <section id="products" class="products-section">
         <div class="section-header">
-            <h2 class="section-title">Our <span>Collection</span></h2>
-            <p class="section-subtitle">Premium Men's Salwar Kameez - Fixed Price ₨ 2,500</p>
+            <span class="section-badge">Our Collection</span>
+            <h2 class="section-title">Premium <span class="gold-text">Salwar Kameez</span></h2>
+            <p class="section-subtitle">Fixed Price Rs. 2,500 - Premium Quality Guaranteed</p>
             <div class="delivery-badge">
                 <i class="fas fa-truck"></i> Free Home Delivery All Over Pakistan
             </div>
@@ -101,126 +151,388 @@
         
         <div class="products-grid">
             <!-- Product 1: Brown -->
-            <div class="product-card" data-id="brown" data-name="Elegant Brown Salwar Kameez">
+            <div class="product-card" data-id="brown" data-name="Elegant Brown Salwar Kameez" data-price="2500" data-image="Brown Salwar Kameez.jpeg">
                 <div class="product-image">
                     <img src="Brown Salwar Kameez.jpeg" alt="Brown Salwar Kameez">
                     <div class="product-overlay">
-                        <button class="quick-view">Quick View</button>
+                        <button class="quick-view-btn" onclick="quickView('brown')">
+                            <i class="fas fa-eye"></i> Quick View
+                        </button>
                     </div>
-                    <span class="badge">New</span>
+                    <span class="badge">New Arrival</span>
+                    <button class="wishlist-btn" onclick="toggleWishlist(this, 'brown')">
+                        <i class="far fa-heart"></i>
+                    </button>
                 </div>
                 <div class="product-info">
+                    <div class="product-rating">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <span>(24)</span>
+                    </div>
                     <h3>Elegant Brown Salwar Kameez</h3>
                     <div class="product-price">
-                        <span class="current-price">₨ 2,500</span>
-                        <span class="old-price">₨ 3,000</span>
+                        <span class="current-price">Rs. 2,500</span>
+                        <span class="old-price">Rs. 3,500</span>
+                        <span class="discount">-29%</span>
                     </div>
-                    <p class="free-delivery"><i class="fas fa-truck"></i> Free Delivery</p>
-                    <button class="add-to-cart" onclick="addToCartFromBtn(this)">Add to Cart</button>
+                    <div class="product-features">
+                        <span><i class="fas fa-check"></i> Premium Fabric</span>
+                        <span><i class="fas fa-check"></i> Stitching Included</span>
+                    </div>
+                    <button class="add-to-cart" onclick="addToCartFromBtn(this)">
+                        <i class="fas fa-shopping-bag"></i> Add to Cart
+                    </button>
                 </div>
             </div>
 
             <!-- Product 2: Navy Blue -->
-            <div class="product-card" data-id="navy" data-name="Navy Blue Salwar Kameez">
+            <div class="product-card" data-id="navy" data-name="Navy Blue Salwar Kameez" data-price="2500" data-image="Navy Blue Salwar Kameez.jpeg">
                 <div class="product-image">
                     <img src="Navy Blue Salwar Kameez.jpeg" alt="Navy Blue Salwar Kameez">
                     <div class="product-overlay">
-                        <button class="quick-view">Quick View</button>
+                        <button class="quick-view-btn" onclick="quickView('navy')">
+                            <i class="fas fa-eye"></i> Quick View
+                        </button>
                     </div>
-                    <span class="badge sale">Hot</span>
+                    <span class="badge hot">Hot Selling</span>
+                    <button class="wishlist-btn" onclick="toggleWishlist(this, 'navy')">
+                        <i class="far fa-heart"></i>
+                    </button>
                 </div>
                 <div class="product-info">
+                    <div class="product-rating">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                        <span>(18)</span>
+                    </div>
                     <h3>Navy Blue Salwar Kameez</h3>
                     <div class="product-price">
-                        <span class="current-price">₨ 2,500</span>
-                        <span class="old-price">₨ 3,000</span>
+                        <span class="current-price">Rs. 2,500</span>
+                        <span class="old-price">Rs. 3,500</span>
+                        <span class="discount">-29%</span>
                     </div>
-                    <p class="free-delivery"><i class="fas fa-truck"></i> Free Delivery</p>
-                    <button class="add-to-cart" onclick="addToCartFromBtn(this)">Add to Cart</button>
+                    <div class="product-features">
+                        <span><i class="fas fa-check"></i> Premium Fabric</span>
+                        <span><i class="fas fa-check"></i> Stitching Included</span>
+                    </div>
+                    <button class="add-to-cart" onclick="addToCartFromBtn(this)">
+                        <i class="fas fa-shopping-bag"></i> Add to Cart
+                    </button>
                 </div>
             </div>
 
             <!-- Product 3: White -->
-            <div class="product-card" data-id="white" data-name="Crisp White Salwar Kameez">
+            <div class="product-card" data-id="white" data-name="Crisp White Salwar Kameez" data-price="2500" data-image="White Salwar Kameez.jpeg">
                 <div class="product-image">
                     <img src="White Salwar Kameez.jpeg" alt="White Salwar Kameez">
                     <div class="product-overlay">
-                        <button class="quick-view">Quick View</button>
+                        <button class="quick-view-btn" onclick="quickView('white')">
+                            <i class="fas fa-eye"></i> Quick View
+                        </button>
                     </div>
-                    <span class="badge">Classic</span>
+                    <span class="badge classic">Classic</span>
+                    <button class="wishlist-btn" onclick="toggleWishlist(this, 'white')">
+                        <i class="far fa-heart"></i>
+                    </button>
                 </div>
                 <div class="product-info">
+                    <div class="product-rating">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <span>(32)</span>
+                    </div>
                     <h3>Crisp White Salwar Kameez</h3>
                     <div class="product-price">
-                        <span class="current-price">₨ 2,500</span>
-                        <span class="old-price">₨ 3,000</span>
+                        <span class="current-price">Rs. 2,500</span>
+                        <span class="old-price">Rs. 3,500</span>
+                        <span class="discount">-29%</span>
                     </div>
-                    <p class="free-delivery"><i class="fas fa-truck"></i> Free Delivery</p>
-                    <button class="add-to-cart" onclick="addToCartFromBtn(this)">Add to Cart</button>
+                    <div class="product-features">
+                        <span><i class="fas fa-check"></i> Premium Fabric</span>
+                        <span><i class="fas fa-check"></i> Stitching Included</span>
+                    </div>
+                    <button class="add-to-cart" onclick="addToCartFromBtn(this)">
+                        <i class="fas fa-shopping-bag"></i> Add to Cart
+                    </button>
                 </div>
             </div>
 
             <!-- Product 4: Black -->
-            <div class="product-card" data-id="black" data-name="Timeless Black Salwar Kameez">
+            <div class="product-card" data-id="black" data-name="Timeless Black Salwar Kameez" data-price="2500" data-image="Black Salwar Kameez.jpeg">
                 <div class="product-image">
                     <img src="Black Salwar Kameez.jpeg" alt="Black Salwar Kameez">
                     <div class="product-overlay">
-                        <button class="quick-view">Quick View</button>
+                        <button class="quick-view-btn" onclick="quickView('black')">
+                            <i class="fas fa-eye"></i> Quick View
+                        </button>
                     </div>
-                    <span class="badge">Premium</span>
+                    <span class="badge premium">Premium</span>
+                    <button class="wishlist-btn" onclick="toggleWishlist(this, 'black')">
+                        <i class="far fa-heart"></i>
+                    </button>
                 </div>
                 <div class="product-info">
+                    <div class="product-rating">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <span>(45)</span>
+                    </div>
                     <h3>Timeless Black Salwar Kameez</h3>
                     <div class="product-price">
-                        <span class="current-price">₨ 2,500</span>
-                        <span class="old-price">₨ 3,000</span>
+                        <span class="current-price">Rs. 2,500</span>
+                        <span class="old-price">Rs. 3,500</span>
+                        <span class="discount">-29%</span>
                     </div>
-                    <p class="free-delivery"><i class="fas fa-truck"></i> Free Delivery</p>
-                    <button class="add-to-cart" onclick="addToCartFromBtn(this)">Add to Cart</button>
+                    <div class="product-features">
+                        <span><i class="fas fa-check"></i> Premium Fabric</span>
+                        <span><i class="fas fa-check"></i> Stitching Included</span>
+                    </div>
+                    <button class="add-to-cart" onclick="addToCartFromBtn(this)">
+                        <i class="fas fa-shopping-bag"></i> Add to Cart
+                    </button>
                 </div>
             </div>
-             <!-- Product 5: Blue -->
-            <div class="product-card" data-id="Blue" data-name="Modern Blue Salwar Kameez">
+
+            <!-- Product 5: Blue -->
+            <div class="product-card" data-id="blue" data-name="Modern Blue Salwar Kameez" data-price="2500" data-image="blue.jpeg">
                 <div class="product-image">
-                    <img src="blue.jpeg" alt="blue Salwar Kameez">
+                    <img src="blue.jpeg" alt="Blue Salwar Kameez">
                     <div class="product-overlay">
-                        <button class="quick-view">Quick View</button>
+                        <button class="quick-view-btn" onclick="quickView('blue')">
+                            <i class="fas fa-eye"></i> Quick View
+                        </button>
                     </div>
-                    <span class="badge">New</span>
+                    <span class="badge">Trending</span>
+                    <button class="wishlist-btn" onclick="toggleWishlist(this, 'blue')">
+                        <i class="far fa-heart"></i>
+                    </button>
                 </div>
                 <div class="product-info">
+                    <div class="product-rating">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                        <span>(12)</span>
+                    </div>
                     <h3>Modern Blue Salwar Kameez</h3>
                     <div class="product-price">
-                        <span class="current-price">₨ 2,500</span>
-                        <span class="old-price">₨ 3,000</span>
+                        <span class="current-price">Rs. 2,500</span>
+                        <span class="old-price">Rs. 3,500</span>
+                        <span class="discount">-29%</span>
                     </div>
-                    <p class="free-delivery"><i class="fas fa-truck"></i> Free Delivery</p>
-                    <button class="add-to-cart" onclick="addToCartFromBtn(this)">Add to Cart</button>
+                    <div class="product-features">
+                        <span><i class="fas fa-check"></i> Premium Fabric</span>
+                        <span><i class="fas fa-check"></i> Stitching Included</span>
+                    </div>
+                    <button class="add-to-cart" onclick="addToCartFromBtn(this)">
+                        <i class="fas fa-shopping-bag"></i> Add to Cart
+                    </button>
                 </div>
             </div>
         </div>
     </section>
+
+    <!-- Favorites Section -->
+    <section id="favorites" class="favorites-section">
+        <div class="section-header">
+            <span class="section-badge">My Collection</span>
+            <h2 class="section-title">My <span class="gold-text">Favorites</span></h2>
+            <p class="section-subtitle">Your saved items for quick access</p>
+        </div>
+        <div class="favorites-container" id="favoritesContainer">
+            <div class="empty-favorites" id="emptyFavorites">
+                <i class="far fa-heart"></i>
+                <h3>No Favorites Yet</h3>
+                <p>Browse our collection and add items to your favorites</p>
+                <a href="#products" class="cta-button">Browse Collection</a>
+            </div>
+            <div class="favorites-grid" id="favoritesGrid" style="display: none;">
+                <!-- Favorites will be loaded dynamically -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Orders Section -->
+    <section id="orders" class="orders-section">
+        <div class="section-header">
+            <span class="section-badge">Order History</span>
+            <h2 class="section-title">My <span class="gold-text">Orders</span></h2>
+            <p class="section-subtitle">Track and manage your orders</p>
+        </div>
+        <div class="orders-container" id="ordersContainer">
+            <div class="empty-orders" id="emptyOrders">
+                <i class="fas fa-shopping-bag"></i>
+                <h3>No Orders Yet</h3>
+                <p>Start shopping to see your orders here</p>
+                <a href="#products" class="cta-button">Shop Now</a>
+            </div>
+            <div class="orders-list" id="ordersList" style="display: none;">
+                <!-- Orders will be loaded dynamically -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Reviews Section -->
+    <section id="reviews" class="reviews-section">
+        <div class="section-header">
+            <span class="section-badge">Testimonials</span>
+            <h2 class="section-title">Customer <span class="gold-text">Reviews</span></h2>
+            <p class="section-subtitle">See what our customers say about us</p>
+        </div>
+        
+        <div class="reviews-container">
+            <div class="reviews-stats">
+                <div class="overall-rating">
+                    <div class="rating-number">4.9</div>
+                    <div class="rating-stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <p>Based on 127 reviews</p>
+                </div>
+                <div class="rating-bars">
+                    <div class="rating-bar">
+                        <span>5 star</span>
+                        <div class="bar"><div style="width: 85%"></div></div>
+                        <span>85%</span>
+                    </div>
+                    <div class="rating-bar">
+                        <span>4 star</span>
+                        <div class="bar"><div style="width: 10%"></div></div>
+                        <span>10%</span>
+                    </div>
+                    <div class="rating-bar">
+                        <span>3 star</span>
+                        <div class="bar"><div style="width: 3%"></div></div>
+                        <span>3%</span>
+                    </div>
+                    <div class="rating-bar">
+                        <span>2 star</span>
+                        <div class="bar"><div style="width: 1%"></div></div>
+                        <span>1%</span>
+                    </div>
+                    <div class="rating-bar">
+                        <span>1 star</span>
+                        <div class="bar"><div style="width: 1%"></div></div>
+                        <span>1%</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="reviews-grid" id="reviewsGrid">
+                <!-- Reviews will be loaded dynamically -->
+            </div>
+
+            <div class="add-review-section">
+                <h3>Share Your Experience</h3>
+                <form class="review-form" id="reviewForm" onsubmit="submitReview(event)">
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label>Your Name *</label>
+                            <input type="text" id="reviewerName" required placeholder="Enter your name">
+                        </div>
+                        <div class="form-group">
+                            <label>Rating *</label>
+                            <div class="star-rating" id="starRating">
+                                <i class="far fa-star" data-rating="1"></i>
+                                <i class="far fa-star" data-rating="2"></i>
+                                <i class="far fa-star" data-rating="3"></i>
+                                <i class="far fa-star" data-rating="4"></i>
+                                <i class="far fa-star" data-rating="5"></i>
+                            </div>
+                            <input type="hidden" id="reviewRating" value="0" required>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label>Your Review *</label>
+                        <textarea id="reviewText" rows="4" required placeholder="Share your experience with our product..."></textarea>
+                    </div>
+                    <div class="form-group">
+                        <label>Product Purchased</label>
+                        <select id="reviewProduct">
+                            <option value="">Select Product</option>
+                            <option value="brown">Elegant Brown</option>
+                            <option value="navy">Navy Blue</option>
+                            <option value="white">Crisp White</option>
+                            <option value="black">Timeless Black</option>
+                            <option value="blue">Modern Blue</option>
+                        </select>
+                    </div>
+                    <button type="submit" class="submit-review-btn">
+                        <i class="fas fa-paper-plane"></i> Submit Review
+                    </button>
+                </form>
+            </div>
+        </div>
+    </section>
+
     <!-- About Section -->
     <section id="about" class="about-section">
         <div class="about-container">
             <div class="about-image">
-                <img src="icon.jpeg" alt="AH Luxe Official">
+                <div class="about-image-frame">
+                    <img src="icon.jpeg" alt="AH Luxe Official">
+                    <div class="experience-badge">
+                        <span class="exp-number">5+</span>
+                        <span class="exp-text">Years<br>Excellence</span>
+                    </div>
+                </div>
             </div>
             <div class="about-content">
-                <h2>About <span>AH Luxe Official</span></h2>
-                <p>Founded with a passion for luxury and elegance, AH Luxe Official brings you the finest collection of men's salwar kameez. Each piece is carefully curated to represent sophistication and style at an affordable price.</p>
+                <span class="section-badge">About Us</span>
+                <h2> Crafting Elegance with <span class="gold-text">Passion</span></h2>
+                <p>Founded with a vision to redefine men's ethnic wear, AH Luxe Official brings you the finest collection of salwar kameez. Each piece is meticulously crafted to represent sophistication, comfort, and timeless style.</p>
+                <p>We believe luxury should be accessible. That's why we offer premium quality at a fixed price of Rs. 2,500, with free delivery across Pakistan.</p>
+                
+                <div class="about-features">
+                    <div class="about-feature">
+                        <i class="fas fa-check-circle"></i>
+                        <span>Premium Quality Fabric</span>
+                    </div>
+                    <div class="about-feature">
+                        <i class="fas fa-check-circle"></i>
+                        <span>Expert Stitching</span>
+                    </div>
+                    <div class="about-feature">
+                        <i class="fas fa-check-circle"></i>
+                        <span>Perfect Fit Guarantee</span>
+                    </div>
+                    <div class="about-feature">
+                        <i class="fas fa-check-circle"></i>
+                        <span>7-Day Easy Returns</span>
+                    </div>
+                </div>
+
                 <div class="stats-row">
                     <div class="about-stat">
+                        <h3>5,00+</h3>
+                        <p>Happy Customers</p>
+                    </div>
+                    <div class="about-stat">
                         <h3>5</h3>
-                        <p>Colors</p>
+                        <p>Unique Colors</p>
                     </div>
                     <div class="about-stat">
                         <h3>100%</h3>
-                        <p>Quality</p>
-                    </div>
-                    <div class="about-stat">
-                        <h3>₨2,500</h3>
-                        <p>Fixed Price</p>
+                        <p>Satisfaction</p>
                     </div>
                 </div>
             </div>
@@ -231,81 +543,125 @@
     <section id="cancel" class="cancel-section">
         <div class="cancel-container">
             <div class="section-header">
-                <h2 class="section-title">Cancel <span>Order</span></h2>
+                <span class="section-badge">Support</span>
+                <h2 class="section-title">Cancel <span class="gold-text">Order</span></h2>
                 <p class="section-subtitle">Need to cancel your order? Submit your request below</p>
             </div>
             
             <form class="cancel-form" onsubmit="submitCancelRequest(event)">
-                <div class="form-group">
-                    <label>Order Number *</label>
-                    <input type="text" id="cancelOrderNum" placeholder="e.g., AHL-00001" required>
+                <div class="form-row">
+                    <div class="form-group">
+                        <label>Order Number *</label>
+                        <input type="text" id="cancelOrderNum" placeholder="e.g., AHL-00001" required>
+                    </div>
+                    <div class="form-group">
+                        <label>Phone Number *</label>
+                        <input type="tel" id="cancelPhone" placeholder="03XX-XXXXXXX" required>
+                    </div>
                 </div>
                 <div class="form-group">
-                    <label>Phone Number *</label>
-                    <input type="tel" id="cancelPhone" placeholder="03XX-XXXXXXX" required>
-                </div>
-                <div class="form-group">
-                    <label>Reason for Cancellation</label>
-                    <select id="cancelReason">
+                    <label>Reason for Cancellation *</label>
+                    <select id="cancelReason" required>
                         <option value="">Select reason</option>
                         <option value="changed-mind">Changed my mind</option>
                         <option value="ordered-wrong">Ordered wrong item</option>
                         <option value="delivery-delay">Delivery time too long</option>
+                        <option value="found-cheaper">Found cheaper elsewhere</option>
                         <option value="other">Other</option>
                     </select>
                 </div>
+                <div class="form-group">
+                    <label>Additional Comments</label>
+                    <textarea id="cancelComments" rows="3" placeholder="Any additional details..."></textarea>
+                </div>
                 <button type="submit" class="cancel-btn">
-                    <i class="fas fa-paper-plane"></i> Submit Request
+                    <i class="fas fa-paper-plane"></i> Submit Cancellation Request
                 </button>
             </form>
             
-            <p class="cancel-note">Our team will contact you within 24 hours</p>
+            <div class="cancel-info">
+                <i class="fas fa-info-circle"></i>
+                <p>Our team will contact you within 24 hours to confirm your cancellation. Refunds are processed within 3-5 business days.</p>
+            </div>
         </div>
     </section>
 
-    <!-- Contact Section - NO LOCATION -->
+    <!-- Contact Section -->
     <section id="contact" class="contact-section">
         <div class="contact-container">
             <div class="contact-info">
-                <h2>Get in <span>Touch</span></h2>
-                <p>Have questions? We'd love to hear from you.</p>
+                <span class="section-badge">Get In Touch</span>
+                <h2>Let's Start a <span class="gold-text">Conversation</span></h2>
+                <p>Have questions? We'd love to hear from you. Send us a message and we'll respond as soon as possible.</p>
                 
-                <div class="contact-item">
-                    <i class="fas fa-envelope"></i>
-                    <div>
-                        <h4>Email</h4>
-                        <p>support@ahluxeofficial.com</p>
+                <div class="contact-details">
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-envelope"></i>
+                        </div>
+                        <div class="contact-text">
+                            <h4>Email Us</h4>
+                            <p>support@ahluxeofficial.com</p>
+                        </div>
                     </div>
-                </div>
-                <div class="contact-item">
-                    <i class="fas fa-phone"></i>
-                    <div>
-                        <h4>Phone</h4>
-                        <p>+92 315 2480364</p>
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-phone-alt"></i>
+                        </div>
+                        <div class="contact-text">
+                            <h4>Call Us</h4>
+                            <p>+92 315 2480364</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-clock"></i>
+                        </div>
+                        <div class="contact-text">
+                            <h4>Working Hours</h4>
+                            <p>Mon - Sat: 9AM - 9PM</p>
+                        </div>
                     </div>
                 </div>
                 
                 <div class="social-links">
-                    <a href="https://www.facebook.com/share/1Bw67f882m/" target="_blank">
-  <i class="fab fa-facebook-f"></i>
-</a>
-                    <a href="https://www.instagram.com/abdul_hussain30?igsh=eDZ4ZDhtYjkyNGNv" target="_blank">
-  <i class="fab fa-instagram"></i>
-</a>
-                    <a href="https://wa.me/923152480364" target="_blank">
-  <i class="fab fa-whatsapp"></i>
-</a>
-                    <a href="https://www.tiktok.com/@abdul_hussain30?_r=1&_t=ZS-93ipLbWPJ5j" class="social-icon">
-  <i class="fa-brands fa-tiktok"></i>
-</a>
+                    <a href="https://www.facebook.com/share/1Bw67f882m/" target="_blank" class="social-link">
+                        <i class="fab fa-facebook-f"></i>
+                    </a>
+                    <a href="https://www.instagram.com/abdul_hussain30" target="_blank" class="social-link">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                    <a href="https://wa.me/923152480364" target="_blank" class="social-link">
+                        <i class="fab fa-whatsapp"></i>
+                    </a>
+                    <a href="https://www.tiktok.com/@abdul_hussain30" target="_blank" class="social-link">
+                        <i class="fab fa-tiktok"></i>
+                    </a>
                 </div>
             </div>
             
             <form class="contact-form" onsubmit="sendContactMessage(event)">
-                <input type="text" placeholder="Your Name" required>
-                <input type="email" placeholder="Your Email" required>
-                <textarea placeholder="Your Message" rows="5" required></textarea>
-                <button type="submit" class="submit-btn">Send Message</button>
+                <div class="form-row">
+                    <div class="form-group">
+                        <label>Your Name *</label>
+                        <input type="text" placeholder="John Doe" required>
+                    </div>
+                    <div class="form-group">
+                        <label>Your Email *</label>
+                        <input type="email" placeholder="john@example.com" required>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label>Subject *</label>
+                    <input type="text" placeholder="How can we help?" required>
+                </div>
+                <div class="form-group">
+                    <label>Your Message *</label>
+                    <textarea placeholder="Tell us more about your inquiry..." rows="5" required></textarea>
+                </div>
+                <button type="submit" class="submit-btn">
+                    <i class="fas fa-paper-plane"></i> Send Message
+                </button>
             </form>
         </div>
     </section>
@@ -313,39 +669,70 @@
     <!-- Footer -->
     <footer class="footer">
         <div class="footer-content">
-            <div class="footer-section">
-                <h3>AH<span>LUXE OFFICIAL</span></h3>
-                <p>Premium Men's Salwar Kameez with Free Home Delivery all over Pakistan.</p>
+            <div class="footer-section footer-brand">
+                <div class="footer-logo">
+                    <img src="icon.jpeg" alt="AH Luxe">
+                    <div>
+                        <h3>AH<span>LUXE</span></h3>
+                        <p>OFFICIAL</p>
+                    </div>
+                </div>
+                <p>Premium Men's Salwar Kameez with Free Home Delivery all over Pakistan. Quality meets affordability.</p>
+                <div class="footer-payment">
+                    <p>Secured Payment via:</p>
+                    <div class="payment-icons">
+                        <i class="fas fa-money-bill-wave" title="Cash on Delivery"></i>
+                        <i class="fas fa-university" title="Bank Transfer"></i>
+                        <i class="fas fa-mobile-alt" title="JazzCash/Easypaisa"></i>
+                    </div>
+                </div>
             </div>
+            
             <div class="footer-section">
                 <h4>Quick Links</h4>
                 <ul>
                     <li><a href="#home">Home</a></li>
                     <li><a href="#products">Collection</a></li>
-                    <li><a href="#about">About</a></li>
+                    <li><a href="#favorites">Favorites</a></li>
+                    <li><a href="#orders">My Orders</a></li>
+                    <li><a href="#about">About Us</a></li>
                     <li><a href="#contact">Contact</a></li>
                 </ul>
             </div>
+            
             <div class="footer-section">
                 <h4>Customer Service</h4>
                 <ul>
                     <li><a href="#cancel">Cancel Order</a></li>
-                    <li><a href="#">Return Policy</a></li>
-                    <li><a href="#">Size Guide</a></li>
-                    <li><a href="#">FAQs</a></li>
+                    <li><a href="#orders">Track Order</a></li>
+                    <li><a href="#" onclick="showReturnPolicy()">Return Policy</a></li>
+                    <li><a href="#" onclick="showFAQ()">FAQs</a></li>
                 </ul>
             </div>
+            
             <div class="footer-section">
                 <h4>Newsletter</h4>
-                <p>Subscribe for exclusive offers</p>
-                <div class="newsletter">
-                    <input type="email" placeholder="Enter email">
-                    <button><i class="fas fa-arrow-right"></i></button>
+                <p>Subscribe for exclusive offers and updates</p>
+                <form class="newsletter-form" onsubmit="subscribeNewsletter(event)">
+                    <input type="email" placeholder="Enter your email" required>
+                    <button type="submit"><i class="fas fa-arrow-right"></i></button>
+                </form>
+                <div class="footer-whatsapp">
+                    <a href="https://wa.me/923152480364" target="_blank">
+                        <i class="fab fa-whatsapp"></i> Chat on WhatsApp
+                    </a>
                 </div>
             </div>
         </div>
+        
         <div class="footer-bottom">
-            <p>&copy; 2026 AH Luxe Official. All rights reserved.</p>
+            <div class="footer-bottom-content">
+                <p>&copy; 2026 AH Luxe Official. All rights reserved.</p>
+                <div class="footer-bottom-links">
+                    <a href="#" onclick="showPrivacyPolicy()">Privacy Policy</a>
+                    <a href="#" onclick="showTerms()">Terms of Service</a>
+                </div>
+            </div>
         </div>
     </footer>
 
@@ -356,24 +743,49 @@
             <button class="close-cart" onclick="closeCart()"><i class="fas fa-times"></i></button>
         </div>
         <div class="cart-items" id="cartItems">
-            <p class="empty-cart">Your cart is empty</p>
+            <!-- Cart items loaded dynamically -->
         </div>
         <div class="cart-footer">
-            <div class="cart-total">
-                <span>Total:</span>
-                <span id="cartTotal">₨ 0</span>
+            <div class="cart-summary">
+                <div class="summary-row">
+                    <span>Subtotal:</span>
+                    <span id="cartSubtotal">Rs. 0</span>
+                </div>
+                <div class="summary-row">
+                    <span>Shipping:</span>
+                    <span class="free-text">FREE</span>
+                </div>
+                <div class="cart-total">
+                    <span>Total:</span>
+                    <span id="cartTotal">Rs. 0</span>
+                </div>
             </div>
-            <p class="free-delivery-note"><i class="fas fa-truck"></i> Free Home Delivery</p>
-            <button class="checkout-btn" onclick="openCheckoutModal()">Order on WhatsApp</button>
+            <button class="checkout-btn" onclick="openCheckoutModal()">
+                <i class="fab fa-whatsapp"></i> Order via WhatsApp
+            </button>
+            <p class="secure-note"><i class="fas fa-lock"></i> Secure Checkout</p>
         </div>
     </div>
     <div class="cart-overlay" id="cartOverlay" onclick="closeCart()"></div>
 
-    <!-- Checkout Modal with Order Number -->
+    <!-- Quick View Modal -->
+    <div class="quick-view-modal" id="quickViewModal">
+        <div class="quick-view-content">
+            <button class="close-quick-view" onclick="closeQuickView()"><i class="fas fa-times"></i></button>
+            <div class="quick-view-body" id="quickViewBody">
+                <!-- Content loaded dynamically -->
+            </div>
+        </div>
+    </div>
+
+    <!-- Checkout Modal -->
     <div class="checkout-modal" id="checkoutModal">
         <div class="checkout-content">
             <div class="checkout-header">
-                <h3>Order Number: <span id="displayOrderNumber">AHL-00001</span></h3>
+                <div>
+                    <h3>Complete Your Order</h3>
+                    <p>Order #: <span id="displayOrderNumber">AHL-00001</span></p>
+                </div>
                 <button class="close-checkout" onclick="closeCheckoutModal()"><i class="fas fa-times"></i></button>
             </div>
             
@@ -381,29 +793,46 @@
                 <div class="order-summary" id="checkoutSummary"></div>
                 
                 <form id="orderForm" onsubmit="processOrder(event)">
-                    <div class="form-group">
-                        <label>Full Name *</label>
-                        <input type="text" id="customerName" required>
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label>Full Name *</label>
+                            <input type="text" id="customerName" placeholder="Enter your full name" required>
+                        </div>
+                        <div class="form-group">
+                            <label>Phone Number *</label>
+                            <input type="tel" id="customerPhone" placeholder="03XX-XXXXXXX" required>
+                        </div>
                     </div>
+                    
                     <div class="form-group">
-                        <label>Phone Number *</label>
-                        <input type="tel" id="customerPhone" required>
+                        <label>Email Address (Optional)</label>
+                        <input type="email" id="customerEmail" placeholder="your@email.com">
                     </div>
+                    
                     <div class="form-group">
-                        <label>Email (Optional)</label>
-                        <input type="email" id="customerEmail">
+                        <label>Complete Address *</label>
+                        <textarea id="customerAddress" rows="3" placeholder="House #, Street, Area, Landmark" required></textarea>
                     </div>
-                    <div class="form-group">
-                        <label>Full Address *</label>
-                        <textarea id="customerAddress" rows="3" required></textarea>
+                    
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label>City *</label>
+                            <input type="text" id="customerCity" placeholder="e.g., Karachi, Lahore" required>
+                        </div>
+                        <div class="form-group">
+                            <label>Postal Code (Optional)</label>
+                            <input type="text" id="customerPostal" placeholder="54000">
+                        </div>
                     </div>
+                    
                     <div class="form-group">
-                        <label>City *</label>
-                        <input type="text" id="customerCity" required>
+                        <label>Order Notes (Optional)</label>
+                        <textarea id="orderNotes" rows="2" placeholder="Any special instructions..."></textarea>
                     </div>
-                    <div class="form-group">
-                        <label>Notes (Optional)</label>
-                        <textarea id="orderNotes" rows="2"></textarea>
+                    
+                    <div class="payment-info">
+                        <h4><i class="fas fa-info-circle"></i> Payment Method</h4>
+                        <p>You will receive payment details via WhatsApp after order confirmation.</p>
                     </div>
                     
                     <button type="submit" class="whatsapp-btn">
@@ -417,14 +846,24 @@
     <!-- Success Modal -->
     <div class="success-modal" id="successModal">
         <div class="success-content">
-            <i class="fas fa-check-circle"></i>
-            <h2>Order Placed!</h2>
+            <div class="success-icon">
+                <i class="fas fa-check-circle"></i>
+            </div>
+            <h2>Order Placed Successfully!</h2>
             <p>Your order number:</p>
             <h3 id="successOrderNumber">AHL-00001</h3>
-            <p>We've sent details via WhatsApp</p>
-            <button onclick="closeSuccessModal()" class="continue-btn">Continue Shopping</button>
+            <p class="success-message">We've sent your order details via WhatsApp. Our team will contact you shortly for confirmation.</p>
+            <div class="success-buttons">
+                <button onclick="closeSuccessModal()" class="continue-btn">Continue Shopping</button>
+                <a href="https://wa.me/923152480364" target="_blank" class="whatsapp-continue-btn">
+                    <i class="fab fa-whatsapp"></i> Open WhatsApp
+                </a>
+            </div>
         </div>
     </div>
+
+    <!-- Toast Notification Container -->
+    <div id="toastContainer"></div>
 
     <script src="script.js"></script>
 </body>
