@@ -2,12 +2,13 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0">
     <title>AH Luxe Official - Premium Salwar Kameez</title>
     <link rel="stylesheet" href="styles.css">
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link rel="icon" type="image/png" href="icon.jpeg">
+<base target="_blank">
 </head>
 <body>
     <!-- Navigation -->
@@ -34,7 +35,7 @@
                     <i class="fas fa-shopping-bag"></i>
                     <span class="cart-count" id="cartCount">0</span>
                 </div>
-                <div class="hamburger" id="hamburger">
+                <div class="hamburger" id="hamburger" onclick="toggleMenu()">
                     <span></span>
                     <span></span>
                     <span></span>
@@ -153,7 +154,7 @@
             <!-- Product 1: Brown -->
             <div class="product-card" data-id="brown" data-name="Elegant Brown Salwar Kameez" data-price="2500" data-image="Brown Salwar Kameez.jpeg">
                 <div class="product-image">
-                    <img src="Brown Salwar Kameez.jpeg" alt="Brown Salwar Kameez">
+                    <img src="Brown Salwar Kameez.jpeg" alt="Brown Salwar Kameez" loading="lazy">
                     <div class="product-overlay">
                         <button class="quick-view-btn" onclick="quickView('brown')">
                             <i class="fas fa-eye"></i> Quick View
@@ -176,8 +177,8 @@
                     <h3>Elegant Brown Salwar Kameez</h3>
                     <div class="product-price">
                         <span class="current-price">Rs. 2,500</span>
-                        <span class="old-price">Rs. 3,500</span>
-                        <span class="discount">-29%</span>
+                        <span class="old-price">Rs. 3,000</span>
+                        <span class="discount">-17%</span>
                     </div>
                     <div class="product-features">
                         <span><i class="fas fa-check"></i> Premium Fabric</span>
@@ -192,7 +193,7 @@
             <!-- Product 2: Navy Blue -->
             <div class="product-card" data-id="navy" data-name="Navy Blue Salwar Kameez" data-price="2500" data-image="Navy Blue Salwar Kameez.jpeg">
                 <div class="product-image">
-                    <img src="Navy Blue Salwar Kameez.jpeg" alt="Navy Blue Salwar Kameez">
+                    <img src="Navy Blue Salwar Kameez.jpeg" alt="Navy Blue Salwar Kameez" loading="lazy">
                     <div class="product-overlay">
                         <button class="quick-view-btn" onclick="quickView('navy')">
                             <i class="fas fa-eye"></i> Quick View
@@ -215,8 +216,8 @@
                     <h3>Navy Blue Salwar Kameez</h3>
                     <div class="product-price">
                         <span class="current-price">Rs. 2,500</span>
-                        <span class="old-price">Rs. 3,500</span>
-                        <span class="discount">-29%</span>
+                        <span class="old-price">Rs. 3,000</span>
+                        <span class="discount">-17%</span>
                     </div>
                     <div class="product-features">
                         <span><i class="fas fa-check"></i> Premium Fabric</span>
@@ -231,7 +232,7 @@
             <!-- Product 3: White -->
             <div class="product-card" data-id="white" data-name="Crisp White Salwar Kameez" data-price="2500" data-image="White Salwar Kameez.jpeg">
                 <div class="product-image">
-                    <img src="White Salwar Kameez.jpeg" alt="White Salwar Kameez">
+                    <img src="White Salwar Kameez.jpeg" alt="White Salwar Kameez" loading="lazy">
                     <div class="product-overlay">
                         <button class="quick-view-btn" onclick="quickView('white')">
                             <i class="fas fa-eye"></i> Quick View
@@ -254,8 +255,8 @@
                     <h3>Crisp White Salwar Kameez</h3>
                     <div class="product-price">
                         <span class="current-price">Rs. 2,500</span>
-                        <span class="old-price">Rs. 3,500</span>
-                        <span class="discount">-29%</span>
+                        <span class="old-price">Rs. 3,000</span>
+                        <span class="discount">-17%</span>
                     </div>
                     <div class="product-features">
                         <span><i class="fas fa-check"></i> Premium Fabric</span>
@@ -270,7 +271,7 @@
             <!-- Product 4: Black -->
             <div class="product-card" data-id="black" data-name="Timeless Black Salwar Kameez" data-price="2500" data-image="Black Salwar Kameez.jpeg">
                 <div class="product-image">
-                    <img src="Black Salwar Kameez.jpeg" alt="Black Salwar Kameez">
+                    <img src="Black Salwar Kameez.jpeg" alt="Black Salwar Kameez" loading="lazy">
                     <div class="product-overlay">
                         <button class="quick-view-btn" onclick="quickView('black')">
                             <i class="fas fa-eye"></i> Quick View
@@ -293,8 +294,8 @@
                     <h3>Timeless Black Salwar Kameez</h3>
                     <div class="product-price">
                         <span class="current-price">Rs. 2,500</span>
-                        <span class="old-price">Rs. 3,500</span>
-                        <span class="discount">-29%</span>
+                        <span class="old-price">Rs. 3,000</span>
+                        <span class="discount">-17%</span>
                     </div>
                     <div class="product-features">
                         <span><i class="fas fa-check"></i> Premium Fabric</span>
@@ -309,7 +310,7 @@
             <!-- Product 5: Blue -->
             <div class="product-card" data-id="blue" data-name="Modern Blue Salwar Kameez" data-price="2500" data-image="blue.jpeg">
                 <div class="product-image">
-                    <img src="blue.jpeg" alt="Blue Salwar Kameez">
+                    <img src="blue.jpeg" alt="Blue Salwar Kameez" loading="lazy">
                     <div class="product-overlay">
                         <button class="quick-view-btn" onclick="quickView('blue')">
                             <i class="fas fa-eye"></i> Quick View
@@ -332,8 +333,8 @@
                     <h3>Modern Blue Salwar Kameez</h3>
                     <div class="product-price">
                         <span class="current-price">Rs. 2,500</span>
-                        <span class="old-price">Rs. 3,500</span>
-                        <span class="discount">-29%</span>
+                        <span class="old-price">Rs. 3,000</span>
+                        <span class="discount">-17%</span>
                     </div>
                     <div class="product-features">
                         <span><i class="fas fa-check"></i> Premium Fabric</span>
@@ -705,8 +706,8 @@
                 <ul>
                     <li><a href="#cancel">Cancel Order</a></li>
                     <li><a href="#orders">Track Order</a></li>
-                    <li><a href="#" onclick="showReturnPolicy()">Return Policy</a></li>
-                    <li><a href="#" onclick="showFAQ()">FAQs</a></li>
+                    <li><a href="#" onclick="showReturnPolicy(); return false;">Return Policy</a></li>
+                    <li><a href="#" onclick="showFAQ(); return false;">FAQs</a></li>
                 </ul>
             </div>
             
@@ -729,8 +730,8 @@
             <div class="footer-bottom-content">
                 <p>&copy; 2026 AH Luxe Official. All rights reserved.</p>
                 <div class="footer-bottom-links">
-                    <a href="#" onclick="showPrivacyPolicy()">Privacy Policy</a>
-                    <a href="#" onclick="showTerms()">Terms of Service</a>
+                    <a href="#" onclick="showPrivacyPolicy(); return false;">Privacy Policy</a>
+                    <a href="#" onclick="showTerms(); return false;">Terms of Service</a>
                 </div>
             </div>
         </div>
