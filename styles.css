@@ -4058,4 +4058,184 @@ h1, h2, h3, h4 {
     .hero-image-wrapper {
         max-width: 200px;
     }
+}/* ==========================================
+   MOBILE CENTERING FIX - AH LUXE
+   ========================================== */
+
+@media screen and (max-width: 768px) {
+
+    /* Contact Section Center Fix */
+    .contact-section {
+        padding: 3rem 1rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .contact-container {
+        width: 100%;
+        max-width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    /* Contact Info Center */
+    .contact-info {
+        width: 100%;
+        max-width: 500px;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: 0 auto 2rem auto;
+    }
+
+    .contact-info h2 {
+        text-align: center;
+        width: 100%;
+    }
+
+    .contact-info > p {
+        text-align: center;
+        width: 100%;
+    }
+
+    /* Contact Details Cards Center */
+    .contact-details {
+        width: 100%;
+        max-width: 400px;
+        margin: 0 auto 2rem auto;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .contact-item {
+        width: 100%;
+        max-width: 350px;
+        flex-direction: column;
+        text-align: center;
+        align-items: center;
+        margin: 0 auto 1rem auto;
+        padding: 1.5rem 1rem;
+    }
+
+    .contact-icon {
+        margin-bottom: 0.8rem;
+    }
+
+    .contact-text {
+        text-align: center;
+    }
+
+    .contact-text h4,
+    .contact-text p {
+        text-align: center;
+    }
+
+    /* Social Icons Center */
+    .social-links {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 1rem;
+        margin: 0 auto;
+        padding: 0;
+    }
+
+    .social-link {
+        width: 50px;
+        height: 50px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: 0;
+    }
+
+    /* Contact Form Center */
+    .contact-form {
+        width: 100%;
+        max-width: 500px;
+        margin: 0 auto;
+        padding: 2rem 1.5rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .contact-form form {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .contact-form .form-row {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        gap: 0;
+    }
+
+    .contact-form .form-group {
+        width: 100%;
+        margin-bottom: 1.5rem;
+    }
+
+    .contact-form .form-group label {
+        text-align: left;
+        width: 100%;
+        display: block;
+    }
+
+    .contact-form .form-group input,
+    .contact-form .form-group textarea {
+        width: 100%;
+    }
+
+    .contact-form .submit-btn {
+        width: 100%;
+        max-width: 100%;
+    }
+}
+
+/* Extra Small Mobile Adjustments */
+@media screen and (max-width: 480px) {
+    .contact-info {
+        padding: 0 0.5rem;
+    }
+
+    .contact-item {
+        max-width: 100%;
+        padding: 1.2rem 1rem;
+    }
+
+    .social-links {
+        gap: 0.8rem;
+    }
+
+    .social-link {
+        width: 45px;
+        height: 45px;
+        font-size: 1.1rem;
+    }
+
+    .contact-form {
+        padding: 1.5rem 1rem;
+    }
+}
+
+/* Very Small Mobile */
+@media screen and (max-width: 360px) {
+    .social-links {
+        gap: 0.6rem;
+    }
+
+    .social-link {
+        width: 40px;
+        height: 40px;
+        font-size: 1rem;
+    }
 }
