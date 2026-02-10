@@ -3698,3 +3698,364 @@ h1, h2, h3, h4 {
         border: 1px solid #ccc;
     }
 }
+@media (max-width: 768px) {
+  .navbar {
+    padding: 0.8rem 1rem;
+  }
+
+  .product-grid {
+    grid-template-columns: 1fr;
+    gap: 1.2rem;
+  }
+
+  .cart-sidebar {
+    width: 100%;
+  }
+
+  .checkout-modal .modal-content {
+    width: 95%;
+    padding: 1rem;
+  }
+
+  .review-card {
+    padding: 1rem;
+  }
+
+  .favorite-card {
+    flex-direction: column;
+  }
+
+  .favorite-actions button {
+    width: 100%;
+    margin-bottom: 0.5rem;
+  }
+
+  #quickViewBody > div {
+    grid-template-columns: 1fr !important;
+  }
+}
+/* ==========================================
+   MOBILE RESPONSIVENESS FIXES - AH LUXE
+   ========================================== */
+
+/* Mobile (up to 768px) */
+@media screen and (max-width: 768px) {
+    html {
+        font-size: 14px;
+        overflow-x: hidden;
+    }
+    
+    body {
+        overflow-x: hidden;
+        width: 100%;
+    }
+    
+    /* Navbar Fix */
+    .navbar {
+        padding: 0.5rem 0;
+    }
+    
+    .nav-container {
+        padding: 0 1rem;
+    }
+    
+    .logo-img {
+        width: 35px;
+        height: 35px;
+    }
+    
+    .logo-text h1 {
+        font-size: 1.4rem;
+    }
+    
+    /* Hero Section - PHOTO AUR TEXT ALAG ALAG */
+    .hero {
+        margin-top: 60px;
+        min-height: auto;
+        padding: 2rem 1rem;
+    }
+    
+    .hero-container {
+        display: flex;
+        flex-direction: column;
+        gap: 2rem;
+        width: 100%;
+    }
+    
+    .hero-content {
+        order: 2;
+        text-align: center;
+        max-width: 100%;
+    }
+    
+    .hero-image {
+        order: 1;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+    
+    .hero-title {
+        font-size: 2rem;
+        line-height: 1.2;
+    }
+    
+    .hero-title br {
+        display: none;
+    }
+    
+    .hero-text {
+        font-size: 0.95rem;
+        max-width: 100%;
+    }
+    
+    .hero-buttons {
+        flex-direction: column;
+        gap: 0.8rem;
+    }
+    
+    .cta-button,
+    .cta-button-outline {
+        width: 100%;
+        justify-content: center;
+    }
+    
+    /* Hero Image Fix */
+    .hero-image-wrapper {
+        width: 100%;
+        max-width: 280px;
+        margin: 0 auto;
+    }
+    
+    .hero-image-wrapper img {
+        width: 100%;
+        height: auto;
+        display: block;
+    }
+    
+    .gold-circle,
+    .gold-circle-2 {
+        display: none;
+    }
+    
+    .floating-badge {
+        display: none;
+    }
+    
+    /* Features Bar */
+    .features-bar {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 1rem;
+        padding: 1.5rem 1rem;
+        margin-top: -1rem;
+    }
+    
+    .feature-item {
+        flex-direction: column;
+        text-align: center;
+        padding: 1rem 0.5rem;
+    }
+    
+    /* Products Section - BARI PHOTO FIX */
+    .products-section {
+        padding: 3rem 1rem;
+    }
+    
+    .section-title {
+        font-size: 1.6rem;
+    }
+    
+    .products-grid {
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+    }
+    
+    .product-image {
+        height: auto;
+        aspect-ratio: 3/4;
+        max-height: 400px;
+    }
+    
+    .product-image img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+    
+    /* Favorites */
+    .favorites-section {
+        padding: 3rem 1rem;
+    }
+    
+    .favorites-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .favorite-image {
+        height: auto;
+        aspect-ratio: 3/4;
+        max-height: 300px;
+    }
+    
+    /* Orders */
+    .orders-section {
+        padding: 3rem 1rem;
+    }
+    
+    .order-header {
+        flex-direction: column;
+        gap: 0.5rem;
+    }
+    
+    .order-footer {
+        flex-direction: column;
+    }
+    
+    /* Reviews */
+    .reviews-section {
+        padding: 3rem 1rem;
+    }
+    
+    .reviews-stats {
+        grid-template-columns: 1fr;
+        padding: 1.5rem;
+    }
+    
+    .overall-rating {
+        padding-right: 0;
+        border-right: none;
+        border-bottom: 1px solid var(--medium-gray);
+        padding-bottom: 1.5rem;
+    }
+    
+    .reviews-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    /* About */
+    .about-section {
+        padding: 3rem 1rem;
+    }
+    
+    .about-container {
+        grid-template-columns: 1fr;
+        text-align: center;
+    }
+    
+    .about-image-frame {
+        max-width: 280px;
+        margin: 0 auto;
+    }
+    
+    .about-features {
+        grid-template-columns: 1fr;
+        max-width: 250px;
+        margin: 1.5rem auto;
+        text-align: left;
+    }
+    
+    /* Contact */
+    .contact-section {
+        padding: 3rem 1rem;
+    }
+    
+    .contact-container {
+        grid-template-columns: 1fr;
+    }
+    
+    .contact-info {
+        text-align: center;
+    }
+    
+    .contact-item {
+        flex-direction: column;
+        text-align: center;
+    }
+    
+    .contact-form {
+        padding: 1.5rem;
+    }
+    
+    .form-row {
+        grid-template-columns: 1fr;
+    }
+    
+    /* Cart */
+    .cart-sidebar {
+        max-width: 100%;
+    }
+    
+    /* Quick View */
+    .quick-view-modal {
+        padding: 1rem;
+    }
+    
+    #quickViewBody > div {
+        grid-template-columns: 1fr !important;
+        padding: 1rem !important;
+    }
+    
+    #quickViewBody img {
+        max-height: 300px;
+    }
+    
+    /* Checkout */
+    .checkout-body {
+        padding: 1rem;
+    }
+    
+    /* Footer */
+    .footer {
+        padding: 3rem 1rem 1.5rem;
+    }
+    
+    .footer-content {
+        grid-template-columns: 1fr;
+        text-align: center;
+    }
+    
+    .footer-logo {
+        justify-content: center;
+    }
+    
+    .newsletter-form {
+        flex-direction: column;
+        max-width: 300px;
+        margin: 0 auto;
+    }
+    
+    .footer-bottom-content {
+        flex-direction: column;
+        text-align: center;
+    }
+}
+
+/* Small Mobile (up to 480px) */
+@media screen and (max-width: 480px) {
+    .hero-title {
+        font-size: 1.6rem;
+    }
+    
+    .hero-image-wrapper {
+        max-width: 240px;
+    }
+    
+    .features-bar {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* Extra Small Mobile (up to 360px) */
+@media screen and (max-width: 360px) {
+    html {
+        font-size: 13px;
+    }
+    
+    .hero-title {
+        font-size: 1.4rem;
+    }
+    
+    .hero-image-wrapper {
+        max-width: 200px;
+    }
+}
