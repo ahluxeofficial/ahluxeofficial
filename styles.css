@@ -4058,50 +4058,50 @@ h1, h2, h3, h4 {
     .hero-image-wrapper {
         max-width: 200px;
     }
-}/* ==========================================
-   MOBILE CENTERING FIX - AH LUXE
+}
+/* ==========================================
+   CONTACT SECTION COMPLETE CENTER FIX
    ========================================== */
 
 @media screen and (max-width: 768px) {
 
-    /* Contact Section Center Fix */
-    .contact-section {
-        padding: 3rem 1rem;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .contact-container {
-        width: 100%;
-        max-width: 100%;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
-
-    /* Contact Info Center */
+    /* Contact Section Header - Center Everything */
     .contact-info {
         width: 100%;
-        max-width: 500px;
-        text-align: center;
+        max-width: 100%;
+        text-align: center !important;
         display: flex;
         flex-direction: column;
-        align-items: center;
+        align-items: center !important;
+        justify-content: center;
+        margin: 0 auto 2rem auto;
+        padding: 0 1rem;
+    }
+
+    /* Section Badge Center */
+    .contact-info .section-badge {
+        display: inline-block;
+        margin: 0 auto 1rem auto;
+        text-align: center;
+    }
+
+    /* Title Center - "Let's Start a Conversation" */
+    .contact-info h2 {
+        text-align: center !important;
+        width: 100%;
+        font-size: 1.8rem;
+        margin-bottom: 1rem;
+    }
+
+    /* Subtitle Center */
+    .contact-info > p {
+        text-align: center !important;
+        width: 100%;
+        max-width: 400px;
         margin: 0 auto 2rem auto;
     }
 
-    .contact-info h2 {
-        text-align: center;
-        width: 100%;
-    }
-
-    .contact-info > p {
-        text-align: center;
-        width: 100%;
-    }
-
-    /* Contact Details Cards Center */
+    /* Contact Details Center */
     .contact-details {
         width: 100%;
         max-width: 400px;
@@ -4134,24 +4134,28 @@ h1, h2, h3, h4 {
         text-align: center;
     }
 
-    /* Social Icons Center */
+    /* Social Links - Show and Center */
     .social-links {
         width: 100%;
-        display: flex;
+        display: flex !important;
         justify-content: center;
         align-items: center;
         gap: 1rem;
-        margin: 0 auto;
+        margin: 1.5rem auto 0 auto;
         padding: 0;
+        visibility: visible !important;
+        opacity: 1 !important;
     }
 
     .social-link {
         width: 50px;
         height: 50px;
-        display: flex;
+        display: flex !important;
         align-items: center;
         justify-content: center;
         margin: 0;
+        visibility: visible !important;
+        opacity: 1 !important;
     }
 
     /* Contact Form Center */
@@ -4197,23 +4201,22 @@ h1, h2, h3, h4 {
 
     .contact-form .submit-btn {
         width: 100%;
-        max-width: 100%;
     }
 }
 
-/* Extra Small Mobile Adjustments */
+/* Extra Small Mobile */
 @media screen and (max-width: 480px) {
-    .contact-info {
-        padding: 0 0.5rem;
+    .contact-info h2 {
+        font-size: 1.5rem;
     }
 
-    .contact-item {
-        max-width: 100%;
-        padding: 1.2rem 1rem;
+    .contact-info > p {
+        font-size: 0.9rem;
     }
 
     .social-links {
         gap: 0.8rem;
+        flex-wrap: wrap;
     }
 
     .social-link {
@@ -4221,14 +4224,14 @@ h1, h2, h3, h4 {
         height: 45px;
         font-size: 1.1rem;
     }
-
-    .contact-form {
-        padding: 1.5rem 1rem;
-    }
 }
 
 /* Very Small Mobile */
 @media screen and (max-width: 360px) {
+    .contact-info h2 {
+        font-size: 1.3rem;
+    }
+
     .social-links {
         gap: 0.6rem;
     }
