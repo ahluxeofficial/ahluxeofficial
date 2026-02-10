@@ -4242,3 +4242,76 @@ h1, h2, h3, h4 {
         font-size: 1rem;
     }
 }
+
+/* ==========================================
+   REMOVE ALL RATINGS/STARS FROM WEBSITE
+   ========================================== */
+
+/* 1. Product Cards mein rating hatana */
+.product-rating,
+.product-card .product-rating,
+.product-info .product-rating {
+    display: none !important;
+}
+
+/* 2. Reviews Section completely hide */
+.reviews-section,
+#reviews,
+section#reviews {
+    display: none !important;
+}
+
+/* 3. Hero stats mein "4.9 Rating" hatana */
+.hero-stats .stat-item:nth-child(2) {
+    display: none !important;
+}
+
+/* 4. Quick View Modal se stars hatana */
+#quickViewBody .fa-star,
+.quick-view-content .fa-star,
+#quickViewBody [style*="fa-star"] {
+    display: none !important;
+}
+
+/* 5. Review form se rating input hatana */
+.star-rating,
+#starRating,
+.review-form .star-rating,
+label[for="reviewRating"],
+.form-group:has(#starRating) {
+    display: none !important;
+}
+
+/* 6. Reviews stats hide */
+.reviews-stats,
+.overall-rating,
+.rating-bars,
+.rating-number,
+.rating-stars {
+    display: none !important;
+}
+
+/* 7. Review cards se stars hatana */
+.review-card .fa-star,
+.review-card .fa-star-half-alt,
+.review-card [style*="fa-star"] {
+    display: none !important;
+}
+
+/* 8. Any remaining star icons */
+.fa-star,
+.fas.fa-star,
+.far.fa-star,
+.fa-star-half-alt {
+    display: none !important;
+}
+
+/* 9. Floating badge mein star hatana (Best Seller) */
+.floating-badge .fa-star {
+    display: none !important;
+}
+
+/* 10. Success modal se check circle rehne do, bas stars hatana */
+.success-modal .fa-star {
+    display: none !important;
+}
